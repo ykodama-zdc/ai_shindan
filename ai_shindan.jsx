@@ -340,54 +340,114 @@ function App() {
     setScores(initialScores);
   }, [services]);
 
+
+  const matchesKey = (service, key) => {
+    if (key.startsWith("id:")) {
+      const targetId = key.split(":")[1];
+      return service.id === targetId;
+    }
+    if (key.startsWith("media_types:")) {
+      const val = key.split(":")[1];
+      return service.tags.media_types && service.tags.media_types.includes(val);
+    }
+    if (key.startsWith("purposes:")) {
+      const val = key.split(":")[1];
+      return service.tags.purposes && service.tags.purposes.includes(val);
+    }
+    if (key.startsWith("features:")) {
+      const featureKey = key.split(":")[1];
+      return service.features && service.features[featureKey] === true;
+    }
+    if (key.startsWith("platform:")) {
+      const parts = key.split(":");
+      const pKey = parts[1];
+      const pVal = parts[2] === "true";
+      return service.platform && service.platform[pKey] === pVal;
+    }
+    if (key === "optout:available") {
+      return service.optout && service.optout.optout_available === true;
+    }
+    if (key === "optout:unavailable") {
+      return !service.optout || service.optout.optout_available === false;
+    }
+
+    const [prop, val] = key.split(":");
+    if (service.tags && String(service.tags[prop]) === val) return true;
+    if (String(service[prop]) === val) return true;
+    return false;
+  };
+
+  const calcDelta = (service, weights) => {
+    if (!weights) return 0;
+    let delta = 0;
+    Object.entries(weights).forEach(([key, score]) => {
+      if (matchesKey(service, key)) {
+        delta += score;
+      }
+    });
+    return delta;
+  };
+
+  const shouldFinishEarly = (scoresSnapshot, nextIndex) => {
+    if (nextIndex >= shuffledQuestions.length) return true;
+    const remaining = shuffledQuestions.slice(nextIndex);
+    if (remaining.length === 0) return true;
+
+    let leaderId = null;
+    let leaderScore = -Infinity;
+    let hasTie = false;
+
+    services.forEach(service => {
+      const score = scoresSnapshot[service.id] ?? 0;
+      if (score > leaderScore) {
+        leaderScore = score;
+        leaderId = service.id;
+        hasTie = false;
+      } else if (score === leaderScore) {
+        hasTie = true;
+      }
+    });
+
+    if (!leaderId || hasTie) return false;
+
+    const leader = services.find(s => s.id === leaderId);
+    let leaderLowerBound = leaderScore;
+    remaining.forEach(question => {
+      const yesDelta = calcDelta(leader, question.weights.yes);
+      const noDelta = calcDelta(leader, question.weights.no);
+      const minDelta = Math.min(0, yesDelta, noDelta);
+      leaderLowerBound += minDelta;
+    });
+
+    for (const service of services) {
+      if (service.id === leaderId) continue;
+      let upperBound = scoresSnapshot[service.id] ?? 0;
+      for (const question of remaining) {
+        const yesDelta = calcDelta(service, question.weights.yes);
+        const noDelta = calcDelta(service, question.weights.no);
+        const maxDelta = Math.max(0, yesDelta, noDelta);
+        upperBound += maxDelta;
+      }
+      if (leaderLowerBound <= upperBound) {
+        return false;
+      }
+    }
+
+    return true;
+  };
+
   const handleAnswer = (answerType) => {
     const question = shuffledQuestions[currentQuestionIndex];
     const newScores = { ...scores };
 
+    
     if (answerType !== 'unknown') {
       const weights = question.weights[answerType];
+
       if (weights) {
         Object.entries(weights).forEach(([key, score]) => {
           services.forEach(service => {
-            let match = false;
-
-            if (key.startsWith("id:")) {
-              const targetId = key.split(":")[1];
-              if (service.id === targetId) match = true;
-            } 
-            else if (key.startsWith("media_types:")) {
-              const val = key.split(":")[1];
-              if (service.tags.media_types && service.tags.media_types.includes(val)) match = true;
-            }
-            else if (key.startsWith("purposes:")) {
-              const val = key.split(":")[1];
-              if (service.tags.purposes && service.tags.purposes.includes(val)) match = true;
-            }
-            else if (key.startsWith("features:")) {
-              const featureKey = key.split(":")[1];
-              if (service.features && service.features[featureKey] === true) match = true;
-            }
-            else if (key.startsWith("platform:")) {
-               // 例: platform:requires_discord:true
-               const parts = key.split(":");
-               const pKey = parts[1];
-               const pVal = parts[2] === "true"; // 文字列からboolへ変換
-               if (service.platform && service.platform[pKey] === pVal) match = true;
-            }
-            else if (key === "optout:available") {
-               if (service.optout && service.optout.optout_available === true) match = true;
-            }
-            else if (key === "optout:unavailable") {
-               if (!service.optout || service.optout.optout_available === false) match = true;
-            }
-            else {
-              // 単一タグ (pricing, japanese_level, difficulty, category)
-              const [prop, val] = key.split(":");
-              if (service.tags && String(service.tags[prop]) === val) match = true;
-              if (String(service[prop]) === val) match = true; // category対応
-            }
-
-            if (match) {
+            if (matchesKey(service, key)) {
               newScores[service.id] = (newScores[service.id] || 0) + score;
             }
           });
@@ -397,11 +457,20 @@ function App() {
 
     setScores(newScores);
 
-    if (currentQuestionIndex < QUESTIONS.length - 1) {
-      setCurrentQuestionIndex(currentQuestionIndex + 1);
-    } else {
+    const nextIndex = currentQuestionIndex + 1;
+    const isLastQuestion = currentQuestionIndex >= shuffledQuestions.length - 1;
+
+    if (isLastQuestion) {
       finishQuiz(newScores);
+      return;
     }
+
+    if (shouldFinishEarly(newScores, nextIndex)) {
+      finishQuiz(newScores);
+      return;
+    }
+
+    setCurrentQuestionIndex(nextIndex);
   };
 
   const finishQuiz = (finalScores) => {
