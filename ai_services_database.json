@@ -1,0 +1,2613 @@
+[
+  {
+    "id": "chatgpt",
+    "name": "ChatGPT (OpenAI)",
+    "category": "chat",
+    "description": "汎用AIチャット。文章生成、画像理解、データ分析など幅広い用途に対応（機能はプラン/地域/時期で変動）。",
+    "url": "https://chatgpt.com/",
+    "tags": {
+      "media_types": ["text", "image", "data", "code"],
+      "purposes": ["general", "business", "research", "dev", "creative"],
+      "pricing": "freemium",
+      "japanese_level": "native",
+      "difficulty": "beginner"
+    },
+    "platform": {
+      "web": true,
+      "ios_app": true,
+      "android_app": true,
+      "desktop_app": true,
+      "requires_discord": false
+    },
+    "features": {
+      "web_search": true,
+      "citations": false,
+      "slides_generation": false,
+      "pdf_qa": true,
+      "long_context": true,
+      "coding_assistant": true,
+      "meeting_transcription": false,
+      "automation_workflows": false,
+      "image_generation": true,
+      "video_generation": false,
+      "music_generation": false,
+      "voice_generation": true,
+      "upscaling": false,
+      "avatar_video": false
+    },
+    "optout": {
+      "optout_available": true,
+      "training_optout_available": true,
+      "retention_control_available": true,
+      "visibility_control_available": null,
+      "notes": "設定のData Controlsから「履歴と学習」等を制御。",
+      "link": "https://help.openai.com/en/articles/7730893-data-controls-faq"
+    }
+  },
+  {
+    "id": "claude",
+    "name": "Claude (Anthropic)",
+    "category": "chat",
+    "description": "自然な文章生成と長文の要約・分析が得意。ドキュメント作業に強い。",
+    "url": "https://claude.ai/",
+    "tags": {
+      "media_types": ["text"],
+      "purposes": ["general", "business", "research"],
+      "pricing": "freemium",
+      "japanese_level": "native",
+      "difficulty": "beginner"
+    },
+    "platform": {
+      "web": true,
+      "ios_app": true,
+      "android_app": true,
+      "desktop_app": false,
+      "requires_discord": false
+    },
+    "features": {
+      "web_search": false,
+      "citations": false,
+      "slides_generation": false,
+      "pdf_qa": true,
+      "long_context": true,
+      "coding_assistant": true,
+      "meeting_transcription": false,
+      "automation_workflows": false,
+      "image_generation": false,
+      "video_generation": false,
+      "music_generation": false,
+      "voice_generation": false,
+      "upscaling": false,
+      "avatar_video": false
+    },
+    "optout": {
+      "optout_available": true,
+      "training_optout_available": true,
+      "retention_control_available": true,
+      "visibility_control_available": null,
+      "notes": "データ削除依頼などの手続きが案内されている。",
+      "link": "https://support.anthropic.com/en/articles/7996848-how-do-i-delete-my-data"
+    }
+  },
+  {
+    "id": "gemini",
+    "name": "Gemini (Google)",
+    "category": "chat",
+    "description": "Google系のAI。検索/要約やGoogleサービス連携が強み（機能は条件で変動）。",
+    "url": "https://gemini.google.com/",
+    "tags": {
+      "media_types": ["text", "image", "data", "code"],
+      "purposes": ["general", "business", "research", "dev", "creative"],
+      "pricing": "freemium",
+      "japanese_level": "native",
+      "difficulty": "beginner"
+    },
+    "platform": {
+      "web": true,
+      "ios_app": true,
+      "android_app": true,
+      "desktop_app": false,
+      "requires_discord": false
+    },
+    "features": {
+      "web_search": true,
+      "citations": true,
+      "slides_generation": false,
+      "pdf_qa": true,
+      "long_context": true,
+      "coding_assistant": true,
+      "meeting_transcription": false,
+      "automation_workflows": false,
+      "image_generation": true,
+      "video_generation": false,
+      "music_generation": false,
+      "voice_generation": true,
+      "upscaling": false,
+      "avatar_video": false
+    },
+    "optout": {
+      "optout_available": true,
+      "training_optout_available": true,
+      "retention_control_available": true,
+      "visibility_control_available": null,
+      "notes": "Googleアカウントのアクティビティ設定で履歴保存などを制御。",
+      "link": "https://support.google.com/gemini/answer/13594961"
+    }
+  },
+  {
+    "id": "copilot",
+    "name": "Microsoft Copilot",
+    "category": "chat",
+    "description": "MicrosoftのAIチャット。検索やMicrosoft製品連携が強い（無料枠/モデルは変動）。",
+    "url": "https://copilot.microsoft.com/",
+    "tags": {
+      "media_types": ["text", "image", "data", "code"],
+      "purposes": ["general", "business", "research", "dev"],
+      "pricing": "freemium",
+      "japanese_level": "native",
+      "difficulty": "beginner"
+    },
+    "platform": {
+      "web": true,
+      "ios_app": true,
+      "android_app": true,
+      "desktop_app": true,
+      "requires_discord": false
+    },
+    "features": {
+      "web_search": true,
+      "citations": true,
+      "slides_generation": false,
+      "pdf_qa": true,
+      "long_context": true,
+      "coding_assistant": true,
+      "meeting_transcription": false,
+      "automation_workflows": false,
+      "image_generation": true,
+      "video_generation": false,
+      "music_generation": false,
+      "voice_generation": true,
+      "upscaling": false,
+      "avatar_video": false
+    },
+    "optout": {
+      "optout_available": true,
+      "training_optout_available": true,
+      "retention_control_available": true,
+      "visibility_control_available": null,
+      "notes": "個人/商用(組織)でデータ保護の扱いが異なるため公式説明を参照。",
+      "link": "https://learn.microsoft.com/en-us/copilot/privacy-and-protections"
+    }
+  },
+  {
+    "id": "perplexity",
+    "name": "Perplexity",
+    "category": "chat",
+    "description": "検索特化型AI。引用元（ソース）提示を重視した調査用途に向く。",
+    "url": "https://www.perplexity.ai/",
+    "tags": {
+      "media_types": ["text"],
+      "purposes": ["research", "general"],
+      "pricing": "freemium",
+      "japanese_level": "native",
+      "difficulty": "beginner"
+    },
+    "platform": {
+      "web": true,
+      "ios_app": true,
+      "android_app": true,
+      "desktop_app": false,
+      "requires_discord": false
+    },
+    "features": {
+      "web_search": true,
+      "citations": true,
+      "slides_generation": false,
+      "pdf_qa": false,
+      "long_context": false,
+      "coding_assistant": false,
+      "meeting_transcription": false,
+      "automation_workflows": false,
+      "image_generation": false,
+      "video_generation": false,
+      "music_generation": false,
+      "voice_generation": false,
+      "upscaling": false,
+      "avatar_video": false
+    },
+    "optout": {
+      "optout_available": true,
+      "training_optout_available": true,
+      "retention_control_available": true,
+      "visibility_control_available": null,
+      "notes": "設定画面からデータ保持/学習関連の設定を変更（UIは変動）。",
+      "link": "https://www.perplexity.ai/settings"
+    }
+  },
+  {
+    "id": "grok",
+    "name": "Grok (xAI / X)",
+    "category": "chat",
+    "description": "X（旧Twitter）上での利用と結びつくAI。最新の話題に強い（提供形態で挙動が変わる）。",
+    "url": "https://x.com/i/grok",
+    "tags": {
+      "media_types": ["text"],
+      "purposes": ["general", "research"],
+      "pricing": "paid",
+      "japanese_level": "ok",
+      "difficulty": "intermediate"
+    },
+    "platform": {
+      "web": true,
+      "ios_app": true,
+      "android_app": true,
+      "desktop_app": false,
+      "requires_discord": false
+    },
+    "features": {
+      "web_search": true,
+      "citations": true,
+      "slides_generation": false,
+      "pdf_qa": false,
+      "long_context": false,
+      "coding_assistant": false,
+      "meeting_transcription": false,
+      "automation_workflows": false,
+      "image_generation": false,
+      "video_generation": false,
+      "music_generation": false,
+      "voice_generation": false,
+      "upscaling": false,
+      "avatar_video": false
+    },
+    "optout": {
+      "optout_available": true,
+      "training_optout_available": true,
+      "retention_control_available": true,
+      "visibility_control_available": null,
+      "notes": "Xの設定（Privacy & Safety等）でGrok関連のデータ利用/パーソナライズを制御できる案内がある。",
+      "link": "https://help.x.com/en/using-x/about-grok"
+    }
+  },
+  {
+    "id": "poe",
+    "name": "Poe",
+    "category": "chat",
+    "description": "複数のAIモデルを1つのアプリで切り替えて使えるプラットフォーム。",
+    "url": "https://poe.com/",
+    "tags": {
+      "media_types": ["text"],
+      "purposes": ["general", "dev", "research"],
+      "pricing": "freemium",
+      "japanese_level": "ok",
+      "difficulty": "intermediate"
+    },
+    "platform": {
+      "web": true,
+      "ios_app": true,
+      "android_app": true,
+      "desktop_app": false,
+      "requires_discord": false
+    },
+    "features": {
+      "web_search": false,
+      "citations": false,
+      "slides_generation": false,
+      "pdf_qa": false,
+      "long_context": false,
+      "coding_assistant": true,
+      "meeting_transcription": false,
+      "automation_workflows": false,
+      "image_generation": false,
+      "video_generation": false,
+      "music_generation": false,
+      "voice_generation": false,
+      "upscaling": false,
+      "avatar_video": false
+    },
+    "optout": {
+      "optout_available": true,
+      "training_optout_available": true,
+      "retention_control_available": true,
+      "visibility_control_available": null,
+      "notes": "ポリシー/設定に基づき履歴削除等の管理が可能。",
+      "link": "https://poe.com/privacy"
+    }
+  },
+  {
+    "id": "mistral",
+    "name": "Mistral AI (Le Chat)",
+    "category": "chat",
+    "description": "Mistralのチャット。軽快さと実用性が売り（提供モデルは変動）。",
+    "url": "https://chat.mistral.ai/",
+    "tags": {
+      "media_types": ["text"],
+      "purposes": ["general", "business", "dev"],
+      "pricing": "freemium",
+      "japanese_level": "ok",
+      "difficulty": "intermediate"
+    },
+    "platform": {
+      "web": true,
+      "ios_app": false,
+      "android_app": false,
+      "desktop_app": false,
+      "requires_discord": false
+    },
+    "features": {
+      "web_search": false,
+      "citations": false,
+      "slides_generation": false,
+      "pdf_qa": false,
+      "long_context": true,
+      "coding_assistant": true,
+      "meeting_transcription": false,
+      "automation_workflows": false,
+      "image_generation": false,
+      "video_generation": false,
+      "music_generation": false,
+      "voice_generation": false,
+      "upscaling": false,
+      "avatar_video": false
+    },
+    "optout": {
+      "optout_available": true,
+      "training_optout_available": true,
+      "retention_control_available": true,
+      "visibility_control_available": null,
+      "notes": "ユーザー設定/ポリシーに基づきデータ共有の制御が可能な旨が案内される。",
+      "link": "https://docs.mistral.ai/"
+    }
+  },
+  {
+    "id": "pi",
+    "name": "Pi (Inflection)",
+    "category": "chat",
+    "description": "“話し相手/コーチング”寄りの対話に強いAI。",
+    "url": "https://pi.ai/",
+    "tags": {
+      "media_types": ["text"],
+      "purposes": ["general", "entertainment"],
+      "pricing": "free",
+      "japanese_level": "native",
+      "difficulty": "beginner"
+    },
+    "platform": {
+      "web": true,
+      "ios_app": true,
+      "android_app": true,
+      "desktop_app": false,
+      "requires_discord": false
+    },
+    "features": {
+      "web_search": false,
+      "citations": false,
+      "slides_generation": false,
+      "pdf_qa": false,
+      "long_context": false,
+      "coding_assistant": false,
+      "meeting_transcription": false,
+      "automation_workflows": false,
+      "image_generation": false,
+      "video_generation": false,
+      "music_generation": false,
+      "voice_generation": false,
+      "upscaling": false,
+      "avatar_video": false
+    },
+    "optout": {
+      "optout_available": false,
+      "training_optout_available": false,
+      "retention_control_available": null,
+      "visibility_control_available": null,
+      "notes": "データ取り扱いはポリシー参照。詳細なオプトアウトは限定的な前提で整理。",
+      "link": "https://pi.ai/policy"
+    }
+  },
+  {
+    "id": "huggingchat",
+    "name": "HuggingChat",
+    "category": "chat",
+    "description": "オープンモデルを試せるチャット。モデル選択が可能。",
+    "url": "https://huggingface.co/chat/",
+    "tags": {
+      "media_types": ["text"],
+      "purposes": ["dev", "general"],
+      "pricing": "free",
+      "japanese_level": "ok",
+      "difficulty": "advanced"
+    },
+    "platform": {
+      "web": true,
+      "ios_app": false,
+      "android_app": false,
+      "desktop_app": false,
+      "requires_discord": false
+    },
+    "features": {
+      "web_search": false,
+      "citations": false,
+      "slides_generation": false,
+      "pdf_qa": false,
+      "long_context": true,
+      "coding_assistant": true,
+      "meeting_transcription": false,
+      "automation_workflows": false,
+      "image_generation": false,
+      "video_generation": false,
+      "music_generation": false,
+      "voice_generation": false,
+      "upscaling": false,
+      "avatar_video": false
+    },
+    "optout": {
+      "optout_available": true,
+      "training_optout_available": true,
+      "retention_control_available": true,
+      "visibility_control_available": true,
+      "notes": "会話共有（モデル作者への共有）設定をオフにできる。",
+      "link": "https://huggingface.co/chat/privacy"
+    }
+  },
+  {
+    "id": "midjourney",
+    "name": "Midjourney",
+    "category": "image",
+    "description": "高い芸術性の画像生成AI。Discord中心（提供形態は変動）。",
+    "url": "https://www.midjourney.com/",
+    "tags": {
+      "media_types": ["image"],
+      "purposes": ["creative"],
+      "pricing": "paid",
+      "japanese_level": "poor",
+      "difficulty": "intermediate"
+    },
+    "platform": {
+      "web": true,
+      "ios_app": false,
+      "android_app": false,
+      "desktop_app": false,
+      "requires_discord": true
+    },
+    "features": {
+      "web_search": false,
+      "citations": false,
+      "slides_generation": false,
+      "pdf_qa": false,
+      "long_context": false,
+      "coding_assistant": false,
+      "meeting_transcription": false,
+      "automation_workflows": false,
+      "image_generation": true,
+      "video_generation": false,
+      "music_generation": false,
+      "voice_generation": false,
+      "upscaling": false,
+      "avatar_video": false
+    },
+    "optout": {
+      "optout_available": true,
+      "training_optout_available": null,
+      "retention_control_available": null,
+      "visibility_control_available": true,
+      "notes": "プライベート生成（Stealth等）は上位プランで提供されることがある。",
+      "link": "https://docs.midjourney.com/docs/privacy-policy"
+    }
+  },
+  {
+    "id": "dalle3",
+    "name": "DALL·E 3 (via ChatGPT)",
+    "category": "image",
+    "description": "会話で指示しやすい画像生成（提供形態はChatGPTのプラン/時期で変動）。",
+    "url": "https://chatgpt.com/",
+    "tags": {
+      "media_types": ["image"],
+      "purposes": ["creative"],
+      "pricing": "paid",
+      "japanese_level": "native",
+      "difficulty": "beginner"
+    },
+    "platform": {
+      "web": true,
+      "ios_app": true,
+      "android_app": true,
+      "desktop_app": true,
+      "requires_discord": false
+    },
+    "features": {
+      "web_search": false,
+      "citations": false,
+      "slides_generation": false,
+      "pdf_qa": false,
+      "long_context": false,
+      "coding_assistant": false,
+      "meeting_transcription": false,
+      "automation_workflows": false,
+      "image_generation": true,
+      "video_generation": false,
+      "music_generation": false,
+      "voice_generation": false,
+      "upscaling": false,
+      "avatar_video": false
+    },
+    "optout": {
+      "optout_available": true,
+      "training_optout_available": true,
+      "retention_control_available": true,
+      "visibility_control_available": null,
+      "notes": "ChatGPTのData Controlsに準拠。",
+      "link": "https://help.openai.com/en/articles/7730893-data-controls-faq"
+    }
+  },
+  {
+    "id": "stablediffusion_web",
+    "name": "Stable Diffusion Online (site example)",
+    "category": "image",
+    "description": "Stable Diffusion系のWebサービス例。サイト運営者により規約/公開範囲が大きく異なるため注意。",
+    "url": "https://stablediffusionweb.com/",
+    "tags": {
+      "media_types": ["image"],
+      "purposes": ["creative"],
+      "pricing": "freemium",
+      "japanese_level": "poor",
+      "difficulty": "intermediate"
+    },
+    "platform": {
+      "web": true,
+      "ios_app": false,
+      "android_app": false,
+      "desktop_app": false,
+      "requires_discord": false
+    },
+    "features": {
+      "web_search": false,
+      "citations": false,
+      "slides_generation": false,
+      "pdf_qa": false,
+      "long_context": false,
+      "coding_assistant": false,
+      "meeting_transcription": false,
+      "automation_workflows": false,
+      "image_generation": true,
+      "video_generation": false,
+      "music_generation": false,
+      "voice_generation": false,
+      "upscaling": false,
+      "avatar_video": false
+    },
+    "optout": {
+      "optout_available": false,
+      "training_optout_available": false,
+      "retention_control_available": null,
+      "visibility_control_available": null,
+      "notes": "サービスのポリシーに依存。公開/共有が前提の可能性があるため要確認。",
+      "link": "https://stablediffusionweb.com/privacy-policy"
+    }
+  },
+  {
+    "id": "adobe_firefly",
+    "name": "Adobe Firefly",
+    "category": "image",
+    "description": "Adobeの生成AI。ライセンス済みコンテンツ等を学習データに用いる方針を掲げ、商用利用を意識した設計。",
+    "url": "https://firefly.adobe.com/",
+    "tags": {
+      "media_types": ["image"],
+      "purposes": ["business", "creative"],
+      "pricing": "freemium",
+      "japanese_level": "native",
+      "difficulty": "beginner"
+    },
+    "platform": {
+      "web": true,
+      "ios_app": false,
+      "android_app": false,
+      "desktop_app": true,
+      "requires_discord": false
+    },
+    "features": {
+      "web_search": false,
+      "citations": false,
+      "slides_generation": false,
+      "pdf_qa": false,
+      "long_context": false,
+      "coding_assistant": false,
+      "meeting_transcription": false,
+      "automation_workflows": false,
+      "image_generation": true,
+      "video_generation": true,
+      "music_generation": false,
+      "voice_generation": false,
+      "upscaling": false,
+      "avatar_video": false
+    },
+    "optout": {
+      "optout_available": true,
+      "training_optout_available": true,
+      "retention_control_available": true,
+      "visibility_control_available": null,
+      "notes": "Adobe側の機械学習/コンテンツ分析設定に依存。",
+      "link": "https://helpx.adobe.com/manage-account/using/machine-learning-faq.html"
+    }
+  },
+  {
+    "id": "canva",
+    "name": "Canva Magic Media",
+    "category": "image",
+    "description": "Canvaに統合された生成AI。生成→そのままデザイン制作に流し込める。",
+    "url": "https://www.canva.com/",
+    "tags": {
+      "media_types": ["image", "video"],
+      "purposes": ["business", "creative"],
+      "pricing": "freemium",
+      "japanese_level": "native",
+      "difficulty": "beginner"
+    },
+    "platform": {
+      "web": true,
+      "ios_app": true,
+      "android_app": true,
+      "desktop_app": true,
+      "requires_discord": false
+    },
+    "features": {
+      "web_search": false,
+      "citations": false,
+      "slides_generation": true,
+      "pdf_qa": false,
+      "long_context": false,
+      "coding_assistant": false,
+      "meeting_transcription": false,
+      "automation_workflows": false,
+      "image_generation": true,
+      "video_generation": true,
+      "music_generation": false,
+      "voice_generation": true,
+      "upscaling": false,
+      "avatar_video": false
+    },
+    "optout": {
+      "optout_available": true,
+      "training_optout_available": true,
+      "retention_control_available": true,
+      "visibility_control_available": null,
+      "notes": "AIプロダクト規約/プライバシー設定で扱いを確認。",
+      "link": "https://www.canva.com/policies/ai-product-terms/"
+    }
+  },
+  {
+    "id": "leonardo",
+    "name": "Leonardo.ai",
+    "category": "image",
+    "description": "ゲームアセット制作や画風維持に強い。エディタ機能も充実。",
+    "url": "https://leonardo.ai/",
+    "tags": {
+      "media_types": ["image"],
+      "purposes": ["creative"],
+      "pricing": "freemium",
+      "japanese_level": "ok",
+      "difficulty": "intermediate"
+    },
+    "platform": {
+      "web": true,
+      "ios_app": false,
+      "android_app": false,
+      "desktop_app": false,
+      "requires_discord": false
+    },
+    "features": {
+      "web_search": false,
+      "citations": false,
+      "slides_generation": false,
+      "pdf_qa": false,
+      "long_context": false,
+      "coding_assistant": false,
+      "meeting_transcription": false,
+      "automation_workflows": false,
+      "image_generation": true,
+      "video_generation": false,
+      "music_generation": false,
+      "voice_generation": false,
+      "upscaling": false,
+      "avatar_video": false
+    },
+    "optout": {
+      "optout_available": true,
+      "training_optout_available": true,
+      "retention_control_available": null,
+      "visibility_control_available": true,
+      "notes": "プランによりプライベート生成等の扱いが変動。",
+      "link": "https://leonardo.ai/privacy-policy/"
+    }
+  },
+  {
+    "id": "magnific",
+    "name": "Magnific AI",
+    "category": "image",
+    "description": "アップスケールと“ディテール補完”に特化。",
+    "url": "https://magnific.ai/",
+    "tags": {
+      "media_types": ["image"],
+      "purposes": ["creative"],
+      "pricing": "paid",
+      "japanese_level": "ok",
+      "difficulty": "intermediate"
+    },
+    "platform": {
+      "web": true,
+      "ios_app": false,
+      "android_app": false,
+      "desktop_app": false,
+      "requires_discord": false
+    },
+    "features": {
+      "web_search": false,
+      "citations": false,
+      "slides_generation": false,
+      "pdf_qa": false,
+      "long_context": false,
+      "coding_assistant": false,
+      "meeting_transcription": false,
+      "automation_workflows": false,
+      "image_generation": false,
+      "video_generation": false,
+      "music_generation": false,
+      "voice_generation": false,
+      "upscaling": true,
+      "avatar_video": false
+    },
+    "optout": {
+      "optout_available": true,
+      "training_optout_available": true,
+      "retention_control_available": null,
+      "visibility_control_available": true,
+      "notes": "非公開扱い等は規約/プランに依存。",
+      "link": "https://magnific.ai/terms"
+    }
+  },
+  {
+    "id": "ideogram",
+    "name": "Ideogram",
+    "category": "image",
+    "description": "画像内の文字表現が得意。ポスター/ロゴ/タイポグラフィ向き。",
+    "url": "https://ideogram.ai/",
+    "tags": {
+      "media_types": ["image"],
+      "purposes": ["creative"],
+      "pricing": "freemium",
+      "japanese_level": "ok",
+      "difficulty": "beginner"
+    },
+    "platform": {
+      "web": true,
+      "ios_app": false,
+      "android_app": false,
+      "desktop_app": false,
+      "requires_discord": false
+    },
+    "features": {
+      "web_search": false,
+      "citations": false,
+      "slides_generation": false,
+      "pdf_qa": false,
+      "long_context": false,
+      "coding_assistant": false,
+      "meeting_transcription": false,
+      "automation_workflows": false,
+      "image_generation": true,
+      "video_generation": false,
+      "music_generation": false,
+      "voice_generation": false,
+      "upscaling": false,
+      "avatar_video": false
+    },
+    "optout": {
+      "optout_available": false,
+      "training_optout_available": false,
+      "retention_control_available": null,
+      "visibility_control_available": true,
+      "notes": "無料プランは公開が前提になりやすい。プランで非公開可否が変動。",
+      "link": "https://ideogram.ai/privacy"
+    }
+  },
+  {
+    "id": "krea",
+    "name": "Krea AI",
+    "category": "image",
+    "description": "リアルタイム生成やラフ→高品質変換が強い。",
+    "url": "https://www.krea.ai/",
+    "tags": {
+      "media_types": ["image"],
+      "purposes": ["creative"],
+      "pricing": "freemium",
+      "japanese_level": "ok",
+      "difficulty": "intermediate"
+    },
+    "platform": {
+      "web": true,
+      "ios_app": false,
+      "android_app": false,
+      "desktop_app": false,
+      "requires_discord": false
+    },
+    "features": {
+      "web_search": false,
+      "citations": false,
+      "slides_generation": false,
+      "pdf_qa": false,
+      "long_context": false,
+      "coding_assistant": false,
+      "meeting_transcription": false,
+      "automation_workflows": false,
+      "image_generation": true,
+      "video_generation": true,
+      "music_generation": false,
+      "voice_generation": false,
+      "upscaling": false,
+      "avatar_video": false
+    },
+    "optout": {
+      "optout_available": true,
+      "training_optout_available": true,
+      "retention_control_available": null,
+      "visibility_control_available": true,
+      "notes": "プランによりプライベートモード等が変動。",
+      "link": "https://www.krea.ai/privacy"
+    }
+  },
+  {
+    "id": "pikaso",
+    "name": "Freepik Pikaso",
+    "category": "image",
+    "description": "Freepikの生成/編集AI。素材制作や既存素材の編集に向く。",
+    "url": "https://www.freepik.com/pikaso",
+    "tags": {
+      "media_types": ["image"],
+      "purposes": ["business", "creative"],
+      "pricing": "freemium",
+      "japanese_level": "ok",
+      "difficulty": "beginner"
+    },
+    "platform": {
+      "web": true,
+      "ios_app": false,
+      "android_app": false,
+      "desktop_app": false,
+      "requires_discord": false
+    },
+    "features": {
+      "web_search": false,
+      "citations": false,
+      "slides_generation": false,
+      "pdf_qa": false,
+      "long_context": false,
+      "coding_assistant": false,
+      "meeting_transcription": false,
+      "automation_workflows": false,
+      "image_generation": true,
+      "video_generation": false,
+      "music_generation": false,
+      "voice_generation": false,
+      "upscaling": false,
+      "avatar_video": false
+    },
+    "optout": {
+      "optout_available": true,
+      "training_optout_available": true,
+      "retention_control_available": true,
+      "visibility_control_available": null,
+      "notes": "Freepikのポリシー/設定に基づく。",
+      "link": "https://www.freepik.com/company/privacy"
+    }
+  },
+  {
+    "id": "runway",
+    "name": "Runway",
+    "category": "video",
+    "description": "動画生成/編集の定番。生成だけでなく編集機能が豊富。",
+    "url": "https://runwayml.com/",
+    "tags": {
+      "media_types": ["video"],
+      "purposes": ["creative"],
+      "pricing": "freemium",
+      "japanese_level": "ok",
+      "difficulty": "intermediate"
+    },
+    "platform": {
+      "web": true,
+      "ios_app": true,
+      "android_app": false,
+      "desktop_app": false,
+      "requires_discord": false
+    },
+    "features": {
+      "web_search": false,
+      "citations": false,
+      "slides_generation": false,
+      "pdf_qa": false,
+      "long_context": false,
+      "coding_assistant": false,
+      "meeting_transcription": false,
+      "automation_workflows": false,
+      "image_generation": false,
+      "video_generation": true,
+      "music_generation": false,
+      "voice_generation": true,
+      "upscaling": false,
+      "avatar_video": false
+    },
+    "optout": {
+      "optout_available": true,
+      "training_optout_available": true,
+      "retention_control_available": true,
+      "visibility_control_available": true,
+      "notes": "設定/プランによりデータ利用や公開範囲が変動。",
+      "link": "https://runwayml.com/privacy"
+    }
+  },
+  {
+    "id": "lumadream",
+    "name": "Luma Dream Machine",
+    "category": "video",
+    "description": "写実寄りの動画生成。フレーム指定なども特徴。",
+    "url": "https://lumalabs.ai/dream-machine",
+    "tags": {
+      "media_types": ["video"],
+      "purposes": ["creative"],
+      "pricing": "freemium",
+      "japanese_level": "ok",
+      "difficulty": "beginner"
+    },
+    "platform": {
+      "web": true,
+      "ios_app": true,
+      "android_app": false,
+      "desktop_app": false,
+      "requires_discord": false
+    },
+    "features": {
+      "web_search": false,
+      "citations": false,
+      "slides_generation": false,
+      "pdf_qa": false,
+      "long_context": false,
+      "coding_assistant": false,
+      "meeting_transcription": false,
+      "automation_workflows": false,
+      "image_generation": false,
+      "video_generation": true,
+      "music_generation": false,
+      "voice_generation": false,
+      "upscaling": false,
+      "avatar_video": false
+    },
+    "optout": {
+      "optout_available": false,
+      "training_optout_available": false,
+      "retention_control_available": null,
+      "visibility_control_available": true,
+      "notes": "公開ギャラリー表示などは仕様/プランで変動するため要確認。",
+      "link": "https://lumalabs.ai/privacy"
+    }
+  },
+  {
+    "id": "pika",
+    "name": "Pika",
+    "category": "video",
+    "description": "アニメ調や短尺動画生成が得意。Discord/Webで利用しやすい。",
+    "url": "https://pika.art/",
+    "tags": {
+      "media_types": ["video"],
+      "purposes": ["creative"],
+      "pricing": "freemium",
+      "japanese_level": "ok",
+      "difficulty": "beginner"
+    },
+    "platform": {
+      "web": true,
+      "ios_app": true,
+      "android_app": false,
+      "desktop_app": false,
+      "requires_discord": false,
+      "discord_optional": true
+    },
+    "features": {
+      "web_search": false,
+      "citations": false,
+      "slides_generation": false,
+      "pdf_qa": false,
+      "long_context": false,
+      "coding_assistant": false,
+      "meeting_transcription": false,
+      "automation_workflows": false,
+      "image_generation": false,
+      "video_generation": true,
+      "music_generation": false,
+      "voice_generation": false,
+      "upscaling": false,
+      "avatar_video": false
+    },
+    "optout": {
+      "optout_available": false,
+      "training_optout_available": false,
+      "retention_control_available": null,
+      "visibility_control_available": true,
+      "notes": "無料版は公開前提になりやすい。プランで非公開可否が変動。",
+      "link": "https://pika.art/privacy"
+    }
+  },
+  {
+    "id": "sora",
+    "name": "Sora (OpenAI)",
+    "category": "video",
+    "description": "OpenAIの動画生成。提供状況/利用条件は時期・地域・プランで変動。",
+    "url": "https://openai.com/sora",
+    "tags": {
+      "media_types": ["video"],
+      "purposes": ["creative"],
+      "pricing": "paid",
+      "japanese_level": "native",
+      "difficulty": "beginner"
+    },
+    "platform": {
+      "web": true,
+      "ios_app": true,
+      "android_app": true,
+      "desktop_app": true,
+      "requires_discord": false
+    },
+    "features": {
+      "web_search": false,
+      "citations": false,
+      "slides_generation": false,
+      "pdf_qa": false,
+      "long_context": false,
+      "coding_assistant": false,
+      "meeting_transcription": false,
+      "automation_workflows": false,
+      "image_generation": false,
+      "video_generation": true,
+      "music_generation": false,
+      "voice_generation": false,
+      "upscaling": false,
+      "avatar_video": false
+    },
+    "optout": {
+      "optout_available": true,
+      "training_optout_available": true,
+      "retention_control_available": true,
+      "visibility_control_available": null,
+      "notes": "OpenAIのデータコントロールに準拠（提供形態により差異があり得る）。",
+      "link": "https://help.openai.com/en/articles/7730893-data-controls-faq"
+    }
+  },
+  {
+    "id": "heygen",
+    "name": "HeyGen",
+    "category": "video",
+    "description": "アバターが話す動画を作れる。研修/営業/説明動画向け。",
+    "url": "https://www.heygen.com/",
+    "tags": {
+      "media_types": ["video"],
+      "purposes": ["business"],
+      "pricing": "freemium",
+      "japanese_level": "ok",
+      "difficulty": "beginner"
+    },
+    "platform": {
+      "web": true,
+      "ios_app": true,
+      "android_app": true,
+      "desktop_app": false,
+      "requires_discord": false
+    },
+    "features": {
+      "web_search": false,
+      "citations": false,
+      "slides_generation": false,
+      "pdf_qa": false,
+      "long_context": false,
+      "coding_assistant": false,
+      "meeting_transcription": false,
+      "automation_workflows": false,
+      "image_generation": false,
+      "video_generation": true,
+      "music_generation": false,
+      "voice_generation": true,
+      "upscaling": false,
+      "avatar_video": true
+    },
+    "optout": {
+      "optout_available": true,
+      "training_optout_available": true,
+      "retention_control_available": true,
+      "visibility_control_available": true,
+      "notes": "Enterprise等で保護が強化されることが多い。",
+      "link": "https://www.heygen.com/privacy-policy"
+    }
+  },
+  {
+    "id": "suno",
+    "name": "Suno",
+    "category": "audio",
+    "description": "ボーカル付きの楽曲生成AI。曲の公開範囲（private/link-only/public）を管理できる。",
+    "url": "https://suno.com/",
+    "tags": {
+      "media_types": ["audio"],
+      "purposes": ["creative"],
+      "pricing": "freemium",
+      "japanese_level": "native",
+      "difficulty": "beginner"
+    },
+    "platform": {
+      "web": true,
+      "ios_app": true,
+      "android_app": true,
+      "desktop_app": false,
+      "requires_discord": false
+    },
+    "features": {
+      "web_search": false,
+      "citations": false,
+      "slides_generation": false,
+      "pdf_qa": false,
+      "long_context": false,
+      "coding_assistant": false,
+      "meeting_transcription": false,
+      "automation_workflows": false,
+      "image_generation": false,
+      "video_generation": false,
+      "music_generation": true,
+      "voice_generation": true,
+      "upscaling": false,
+      "avatar_video": false
+    },
+    "optout": {
+      "optout_available": false,
+      "training_optout_available": false,
+      "retention_control_available": null,
+      "visibility_control_available": true,
+      "notes": "曲はprivate/link-onlyがデフォルトで、publicにすると検索/掲載対象になり得る。",
+      "link": "https://help.suno.com/en/articles/2481537"
+    }
+  },
+  {
+    "id": "udio",
+    "name": "Udio",
+    "category": "audio",
+    "description": "音楽生成AI。生成後の構成調整などの柔軟さが特徴。",
+    "url": "https://www.udio.com/",
+    "tags": {
+      "media_types": ["audio"],
+      "purposes": ["creative"],
+      "pricing": "freemium",
+      "japanese_level": "ok",
+      "difficulty": "beginner"
+    },
+    "platform": {
+      "web": true,
+      "ios_app": false,
+      "android_app": false,
+      "desktop_app": false,
+      "requires_discord": false
+    },
+    "features": {
+      "web_search": false,
+      "citations": false,
+      "slides_generation": false,
+      "pdf_qa": false,
+      "long_context": false,
+      "coding_assistant": false,
+      "meeting_transcription": false,
+      "automation_workflows": false,
+      "image_generation": false,
+      "video_generation": false,
+      "music_generation": true,
+      "voice_generation": false,
+      "upscaling": false,
+      "avatar_video": false
+    },
+    "optout": {
+      "optout_available": false,
+      "training_optout_available": false,
+      "retention_control_available": null,
+      "visibility_control_available": null,
+      "notes": "権利/公開範囲/プライバシーは規約に依存。",
+      "link": "https://www.udio.com/privacy-policy"
+    }
+  },
+  {
+    "id": "elevenlabs",
+    "name": "ElevenLabs",
+    "category": "audio",
+    "description": "高品質な音声合成。声のクローン機能なども提供（安全策は機能/地域で変動）。",
+    "url": "https://elevenlabs.io/",
+    "tags": {
+      "media_types": ["audio"],
+      "purposes": ["creative", "business"],
+      "pricing": "freemium",
+      "japanese_level": "native",
+      "difficulty": "beginner"
+    },
+    "platform": {
+      "web": true,
+      "ios_app": true,
+      "android_app": true,
+      "desktop_app": false,
+      "requires_discord": false
+    },
+    "features": {
+      "web_search": false,
+      "citations": false,
+      "slides_generation": false,
+      "pdf_qa": false,
+      "long_context": false,
+      "coding_assistant": false,
+      "meeting_transcription": false,
+      "automation_workflows": false,
+      "image_generation": false,
+      "video_generation": false,
+      "music_generation": false,
+      "voice_generation": true,
+      "upscaling": false,
+      "avatar_video": false
+    },
+    "optout": {
+      "optout_available": true,
+      "training_optout_available": true,
+      "retention_control_available": true,
+      "visibility_control_available": null,
+      "notes": "音声データの扱いはポリシー参照。",
+      "link": "https://elevenlabs.io/privacy-policy"
+    }
+  },
+  {
+    "id": "github_copilot",
+    "name": "GitHub Copilot",
+    "category": "dev",
+    "description": "IDE内でコード補完/提案。開発効率向上に強い。",
+    "url": "https://github.com/features/copilot",
+    "tags": {
+      "media_types": ["code"],
+      "purposes": ["dev"],
+      "pricing": "paid",
+      "japanese_level": "ok",
+      "difficulty": "intermediate"
+    },
+    "platform": {
+      "web": true,
+      "ios_app": false,
+      "android_app": false,
+      "desktop_app": true,
+      "requires_discord": false
+    },
+    "features": {
+      "web_search": false,
+      "citations": false,
+      "slides_generation": false,
+      "pdf_qa": false,
+      "long_context": false,
+      "coding_assistant": true,
+      "meeting_transcription": false,
+      "automation_workflows": false,
+      "image_generation": false,
+      "video_generation": false,
+      "music_generation": false,
+      "voice_generation": false,
+      "upscaling": false,
+      "avatar_video": false
+    },
+    "optout": {
+      "optout_available": true,
+      "training_optout_available": true,
+      "retention_control_available": true,
+      "visibility_control_available": null,
+      "notes": "プライバシー設定（収集/一致提案など）を制御可能。",
+      "link": "https://docs.github.com/en/copilot/managing-copilot/managing-privacy-settings-for-github-copilot"
+    }
+  },
+  {
+    "id": "cursor",
+    "name": "Cursor",
+    "category": "dev",
+    "description": "AIネイティブなコードエディタ。コードベース理解を活かした編集が可能。",
+    "url": "https://cursor.com/",
+    "tags": {
+      "media_types": ["code"],
+      "purposes": ["dev"],
+      "pricing": "freemium",
+      "japanese_level": "ok",
+      "difficulty": "intermediate"
+    },
+    "platform": {
+      "web": false,
+      "ios_app": false,
+      "android_app": false,
+      "desktop_app": true,
+      "requires_discord": false
+    },
+    "features": {
+      "web_search": true,
+      "citations": false,
+      "slides_generation": false,
+      "pdf_qa": true,
+      "long_context": true,
+      "coding_assistant": true,
+      "meeting_transcription": false,
+      "automation_workflows": false,
+      "image_generation": false,
+      "video_generation": false,
+      "music_generation": false,
+      "voice_generation": false,
+      "upscaling": false,
+      "avatar_video": false
+    },
+    "optout": {
+      "optout_available": true,
+      "training_optout_available": true,
+      "retention_control_available": true,
+      "visibility_control_available": null,
+      "notes": "Privacy Mode等で送信/保存/学習利用を抑制できる旨が案内される。",
+      "link": "https://cursor.com/privacy"
+    }
+  },
+  {
+    "id": "replit",
+    "name": "Replit",
+    "category": "dev",
+    "description": "ブラウザで完結する開発環境。AI支援で作成〜デプロイまで扱える。",
+    "url": "https://replit.com/",
+    "tags": {
+      "media_types": ["code"],
+      "purposes": ["dev"],
+      "pricing": "freemium",
+      "japanese_level": "ok",
+      "difficulty": "beginner"
+    },
+    "platform": {
+      "web": true,
+      "ios_app": false,
+      "android_app": false,
+      "desktop_app": false,
+      "requires_discord": false
+    },
+    "features": {
+      "web_search": false,
+      "citations": false,
+      "slides_generation": false,
+      "pdf_qa": false,
+      "long_context": false,
+      "coding_assistant": true,
+      "meeting_transcription": false,
+      "automation_workflows": true,
+      "image_generation": false,
+      "video_generation": false,
+      "music_generation": false,
+      "voice_generation": false,
+      "upscaling": false,
+      "avatar_video": false
+    },
+    "optout": {
+      "optout_available": true,
+      "training_optout_available": true,
+      "retention_control_available": true,
+      "visibility_control_available": null,
+      "notes": "AI機能利用時のデータ取り扱いはポリシー参照。",
+      "link": "https://replit.com/privacy"
+    }
+  },
+  {
+    "id": "amazon_q",
+    "name": "Amazon Q Developer",
+    "category": "dev",
+    "description": "AWS開発に特化したAIアシスタント。運用/トラブルシュートにも向く。",
+    "url": "https://aws.amazon.com/q/developer/",
+    "tags": {
+      "media_types": ["code"],
+      "purposes": ["dev"],
+      "pricing": "freemium",
+      "japanese_level": "ok",
+      "difficulty": "advanced"
+    },
+    "platform": {
+      "web": true,
+      "ios_app": false,
+      "android_app": false,
+      "desktop_app": true,
+      "requires_discord": false
+    },
+    "features": {
+      "web_search": false,
+      "citations": false,
+      "slides_generation": false,
+      "pdf_qa": false,
+      "long_context": true,
+      "coding_assistant": true,
+      "meeting_transcription": false,
+      "automation_workflows": false,
+      "image_generation": false,
+      "video_generation": false,
+      "music_generation": false,
+      "voice_generation": false,
+      "upscaling": false,
+      "avatar_video": false
+    },
+    "optout": {
+      "optout_available": true,
+      "training_optout_available": true,
+      "retention_control_available": true,
+      "visibility_control_available": null,
+      "notes": "顧客コンテンツの扱いはAWSの説明/契約条件に依存。",
+      "link": "https://aws.amazon.com/q/faq/"
+    }
+  },
+  {
+    "id": "tabnine",
+    "name": "Tabnine",
+    "category": "dev",
+    "description": "プライバシー重視のコード補完AI。ローカル運用を選べる場合がある。",
+    "url": "https://www.tabnine.com/",
+    "tags": {
+      "media_types": ["code"],
+      "purposes": ["dev"],
+      "pricing": "freemium",
+      "japanese_level": "ok",
+      "difficulty": "intermediate"
+    },
+    "platform": {
+      "web": true,
+      "ios_app": false,
+      "android_app": false,
+      "desktop_app": true,
+      "requires_discord": false
+    },
+    "features": {
+      "web_search": false,
+      "citations": false,
+      "slides_generation": false,
+      "pdf_qa": false,
+      "long_context": false,
+      "coding_assistant": true,
+      "meeting_transcription": false,
+      "automation_workflows": false,
+      "image_generation": false,
+      "video_generation": false,
+      "music_generation": false,
+      "voice_generation": false,
+      "upscaling": false,
+      "avatar_video": false
+    },
+    "optout": {
+      "optout_available": true,
+      "training_optout_available": true,
+      "retention_control_available": true,
+      "visibility_control_available": null,
+      "notes": "学習拒否/送信抑制などの方針は公式ポリシー参照。",
+      "link": "https://www.tabnine.com/privacy"
+    }
+  },
+  {
+    "id": "notion_ai",
+    "name": "Notion AI",
+    "category": "business",
+    "description": "Notion内文書の要約/生成/Q&A。ワークスペース検索が強い。",
+    "url": "https://www.notion.so/product/ai",
+    "tags": {
+      "media_types": ["text"],
+      "purposes": ["business"],
+      "pricing": "paid",
+      "japanese_level": "native",
+      "difficulty": "beginner"
+    },
+    "platform": {
+      "web": true,
+      "ios_app": true,
+      "android_app": true,
+      "desktop_app": true,
+      "requires_discord": false
+    },
+    "features": {
+      "web_search": false,
+      "citations": false,
+      "slides_generation": false,
+      "pdf_qa": true,
+      "long_context": true,
+      "coding_assistant": false,
+      "meeting_transcription": false,
+      "automation_workflows": false,
+      "image_generation": false,
+      "video_generation": false,
+      "music_generation": false,
+      "voice_generation": false,
+      "upscaling": false,
+      "avatar_video": false
+    },
+    "optout": {
+      "optout_available": true,
+      "training_optout_available": true,
+      "retention_control_available": true,
+      "visibility_control_available": null,
+      "notes": "顧客データをモデル学習に使わない旨の説明がある。",
+      "link": "https://www.notion.so/help/ai-security-practices"
+    }
+  },
+  {
+    "id": "deepl",
+    "name": "DeepL",
+    "category": "business",
+    "description": "高精度な翻訳ツール。Proでデータ保護が強化される。",
+    "url": "https://www.deepl.com/",
+    "tags": {
+      "media_types": ["text"],
+      "purposes": ["business"],
+      "pricing": "freemium",
+      "japanese_level": "native",
+      "difficulty": "beginner"
+    },
+    "platform": {
+      "web": true,
+      "ios_app": true,
+      "android_app": true,
+      "desktop_app": true,
+      "requires_discord": false
+    },
+    "features": {
+      "web_search": false,
+      "citations": false,
+      "slides_generation": false,
+      "pdf_qa": false,
+      "long_context": false,
+      "coding_assistant": false,
+      "meeting_transcription": false,
+      "automation_workflows": false,
+      "image_generation": false,
+      "video_generation": false,
+      "music_generation": false,
+      "voice_generation": true,
+      "upscaling": false,
+      "avatar_video": false
+    },
+    "optout": {
+      "optout_available": true,
+      "training_optout_available": true,
+      "retention_control_available": true,
+      "visibility_control_available": null,
+      "notes": "無料版とProでデータの扱いが異なる前提で整理。",
+      "link": "https://www.deepl.com/pro-data-security"
+    }
+  },
+  {
+    "id": "grammarly",
+    "name": "Grammarly",
+    "category": "business",
+    "description": "英作文の校正/推敲。トーン提案なども行う。",
+    "url": "https://www.grammarly.com/",
+    "tags": {
+      "media_types": ["text"],
+      "purposes": ["business"],
+      "pricing": "freemium",
+      "japanese_level": "ok",
+      "difficulty": "beginner"
+    },
+    "platform": {
+      "web": true,
+      "ios_app": true,
+      "android_app": true,
+      "desktop_app": true,
+      "requires_discord": false
+    },
+    "features": {
+      "web_search": false,
+      "citations": false,
+      "slides_generation": false,
+      "pdf_qa": false,
+      "long_context": false,
+      "coding_assistant": false,
+      "meeting_transcription": false,
+      "automation_workflows": false,
+      "image_generation": false,
+      "video_generation": false,
+      "music_generation": false,
+      "voice_generation": false,
+      "upscaling": false,
+      "avatar_video": false
+    },
+    "optout": {
+      "optout_available": true,
+      "training_optout_available": true,
+      "retention_control_available": true,
+      "visibility_control_available": null,
+      "notes": "ユーザーコンテンツのトレーニング除外に関する説明がある。",
+      "link": "https://www.grammarly.com/trust"
+    }
+  },
+  {
+    "id": "jasper",
+    "name": "Jasper",
+    "category": "business",
+    "description": "マーケ/記事作成に特化。ブランドボイス運用に向く。",
+    "url": "https://www.jasper.ai/",
+    "tags": {
+      "media_types": ["text"],
+      "purposes": ["business"],
+      "pricing": "paid",
+      "japanese_level": "ok",
+      "difficulty": "intermediate"
+    },
+    "platform": {
+      "web": true,
+      "ios_app": false,
+      "android_app": false,
+      "desktop_app": false,
+      "requires_discord": false
+    },
+    "features": {
+      "web_search": false,
+      "citations": false,
+      "slides_generation": false,
+      "pdf_qa": false,
+      "long_context": false,
+      "coding_assistant": false,
+      "meeting_transcription": false,
+      "automation_workflows": false,
+      "image_generation": false,
+      "video_generation": false,
+      "music_generation": false,
+      "voice_generation": false,
+      "upscaling": false,
+      "avatar_video": false
+    },
+    "optout": {
+      "optout_available": true,
+      "training_optout_available": true,
+      "retention_control_available": true,
+      "visibility_control_available": null,
+      "notes": "Enterprise等で学習不使用が明示されることが多い。",
+      "link": "https://www.jasper.ai/legal/privacy-policy"
+    }
+  },
+  {
+    "id": "copyai",
+    "name": "Copy.ai",
+    "category": "business",
+    "description": "広告コピー/メール/SNS文などの生成に強い。テンプレートが豊富。",
+    "url": "https://www.copy.ai/",
+    "tags": {
+      "media_types": ["text"],
+      "purposes": ["business"],
+      "pricing": "freemium",
+      "japanese_level": "ok",
+      "difficulty": "beginner"
+    },
+    "platform": {
+      "web": true,
+      "ios_app": false,
+      "android_app": false,
+      "desktop_app": false,
+      "requires_discord": false
+    },
+    "features": {
+      "web_search": false,
+      "citations": false,
+      "slides_generation": false,
+      "pdf_qa": false,
+      "long_context": false,
+      "coding_assistant": false,
+      "meeting_transcription": false,
+      "automation_workflows": true,
+      "image_generation": false,
+      "video_generation": false,
+      "music_generation": false,
+      "voice_generation": false,
+      "upscaling": false,
+      "avatar_video": false
+    },
+    "optout": {
+      "optout_available": true,
+      "training_optout_available": true,
+      "retention_control_available": true,
+      "visibility_control_available": null,
+      "notes": "ワークスペース設定等で管理できる前提で整理。",
+      "link": "https://www.copy.ai/privacy-policy"
+    }
+  },
+  {
+    "id": "gamma",
+    "name": "Gamma",
+    "category": "business",
+    "description": "テキストからスライド/ページを自動生成。デザイン調整が少なく済む。",
+    "url": "https://gamma.app/",
+    "tags": {
+      "media_types": ["text", "image", "data"],
+      "purposes": ["business"],
+      "pricing": "freemium",
+      "japanese_level": "native",
+      "difficulty": "beginner"
+    },
+    "platform": {
+      "web": true,
+      "ios_app": true,
+      "android_app": true,
+      "desktop_app": false,
+      "requires_discord": false
+    },
+    "features": {
+      "web_search": true,
+      "citations": false,
+      "slides_generation": true,
+      "pdf_qa": true,
+      "long_context": false,
+      "coding_assistant": false,
+      "meeting_transcription": false,
+      "automation_workflows": false,
+      "image_generation": true,
+      "video_generation": false,
+      "music_generation": false,
+      "voice_generation": false,
+      "upscaling": false,
+      "avatar_video": false
+    },
+    "optout": {
+      "optout_available": true,
+      "training_optout_available": true,
+      "retention_control_available": true,
+      "visibility_control_available": true,
+      "notes": "公開/共有範囲やデータ取り扱いはポリシー参照。",
+      "link": "https://gamma.app/privacy"
+    }
+  },
+  {
+    "id": "beautifulai",
+    "name": "Beautiful.ai",
+    "category": "business",
+    "description": "レイアウト自動整形のプレゼン作成ツール。",
+    "url": "https://www.beautiful.ai/",
+    "tags": {
+      "media_types": ["text", "image", "data"],
+      "purposes": ["business"],
+      "pricing": "paid",
+      "japanese_level": "ok",
+      "difficulty": "beginner"
+    },
+    "platform": {
+      "web": true,
+      "ios_app": false,
+      "android_app": false,
+      "desktop_app": false,
+      "requires_discord": false
+    },
+    "features": {
+      "web_search": false,
+      "citations": false,
+      "slides_generation": true,
+      "pdf_qa": false,
+      "long_context": false,
+      "coding_assistant": false,
+      "meeting_transcription": false,
+      "automation_workflows": false,
+      "image_generation": true,
+      "video_generation": false,
+      "music_generation": false,
+      "voice_generation": false,
+      "upscaling": false,
+      "avatar_video": false
+    },
+    "optout": {
+      "optout_available": true,
+      "training_optout_available": true,
+      "retention_control_available": true,
+      "visibility_control_available": true,
+      "notes": "ビジネス向けプランで保護が強化されることが多い。",
+      "link": "https://www.beautiful.ai/privacy"
+    }
+  },
+  {
+    "id": "otter",
+    "name": "Otter.ai",
+    "category": "business",
+    "description": "会議の録音/文字起こし/要約（英語中心）。",
+    "url": "https://otter.ai/",
+    "tags": {
+      "media_types": ["audio"],
+      "purposes": ["business"],
+      "pricing": "freemium",
+      "japanese_level": "poor",
+      "difficulty": "beginner"
+    },
+    "platform": {
+      "web": true,
+      "ios_app": true,
+      "android_app": true,
+      "desktop_app": false,
+      "requires_discord": false
+    },
+    "features": {
+      "web_search": false,
+      "citations": false,
+      "slides_generation": false,
+      "pdf_qa": false,
+      "long_context": false,
+      "coding_assistant": false,
+      "meeting_transcription": true,
+      "automation_workflows": false,
+      "image_generation": false,
+      "video_generation": false,
+      "music_generation": false,
+      "voice_generation": false,
+      "upscaling": false,
+      "avatar_video": false
+    },
+    "optout": {
+      "optout_available": true,
+      "training_optout_available": true,
+      "retention_control_available": true,
+      "visibility_control_available": true,
+      "notes": "録音/共有範囲や保存はポリシー参照。",
+      "link": "https://otter.ai/privacy-policy"
+    }
+  },
+  {
+    "id": "tldv",
+    "name": "tl;dv",
+    "category": "business",
+    "description": "Zoom/Meet/Teamsの録画・文字起こし・要約。クリップ共有が便利。",
+    "url": "https://tldv.io/",
+    "tags": {
+      "media_types": ["video"],
+      "purposes": ["business"],
+      "pricing": "freemium",
+      "japanese_level": "native",
+      "difficulty": "beginner"
+    },
+    "platform": {
+      "web": true,
+      "ios_app": false,
+      "android_app": false,
+      "desktop_app": false,
+      "requires_discord": false
+    },
+    "features": {
+      "web_search": false,
+      "citations": false,
+      "slides_generation": false,
+      "pdf_qa": false,
+      "long_context": false,
+      "coding_assistant": false,
+      "meeting_transcription": true,
+      "automation_workflows": false,
+      "image_generation": false,
+      "video_generation": false,
+      "music_generation": false,
+      "voice_generation": false,
+      "upscaling": false,
+      "avatar_video": false
+    },
+    "optout": {
+      "optout_available": true,
+      "training_optout_available": true,
+      "retention_control_available": true,
+      "visibility_control_available": true,
+      "notes": "公開範囲や共有設定を制御可能。",
+      "link": "https://tldv.io/privacy/"
+    }
+  },
+  {
+    "id": "chatpdf",
+    "name": "ChatPDF",
+    "category": "business",
+    "description": "PDFを読み込ませてQ&Aできる。論文/マニュアル読解向き。",
+    "url": "https://www.chatpdf.com/",
+    "tags": {
+      "media_types": ["text"],
+      "purposes": ["research"],
+      "pricing": "freemium",
+      "japanese_level": "native",
+      "difficulty": "beginner"
+    },
+    "platform": {
+      "web": true,
+      "ios_app": true,
+      "android_app": true,
+      "desktop_app": false,
+      "requires_discord": false
+    },
+    "features": {
+      "web_search": false,
+      "citations": false,
+      "slides_generation": false,
+      "pdf_qa": true,
+      "long_context": true,
+      "coding_assistant": false,
+      "meeting_transcription": false,
+      "automation_workflows": false,
+      "image_generation": false,
+      "video_generation": false,
+      "music_generation": false,
+      "voice_generation": false,
+      "upscaling": false,
+      "avatar_video": false
+    },
+    "optout": {
+      "optout_available": true,
+      "training_optout_available": true,
+      "retention_control_available": true,
+      "visibility_control_available": null,
+      "notes": "アップロードデータの削除等はポリシー参照。",
+      "link": "https://www.chatpdf.com/privacy"
+    }
+  },
+  {
+    "id": "notebooklm",
+    "name": "NotebookLM (Google)",
+    "category": "research",
+    "description": "自分の資料に基づいて回答する“リサーチ用”AI。ソース参照がしやすい。",
+    "url": "https://notebooklm.google.com/",
+    "tags": {
+      "media_types": ["text"],
+      "purposes": ["research"],
+      "pricing": "free",
+      "japanese_level": "native",
+      "difficulty": "beginner"
+    },
+    "platform": {
+      "web": true,
+      "ios_app": false,
+      "android_app": false,
+      "desktop_app": false,
+      "requires_discord": false
+    },
+    "features": {
+      "web_search": true,
+      "citations": true,
+      "slides_generation": false,
+      "pdf_qa": true,
+      "long_context": true,
+      "coding_assistant": false,
+      "meeting_transcription": false,
+      "automation_workflows": false,
+      "image_generation": false,
+      "video_generation": false,
+      "music_generation": false,
+      "voice_generation": true,
+      "upscaling": false,
+      "avatar_video": false
+    },
+    "optout": {
+      "optout_available": true,
+      "training_optout_available": true,
+      "retention_control_available": true,
+      "visibility_control_available": null,
+      "notes": "個人データの学習利用については公式ヘルプ参照。",
+      "link": "https://support.google.com/notebooklm/answer/14271253"
+    }
+  },
+  {
+    "id": "consensus",
+    "name": "Consensus",
+    "category": "research",
+    "description": "科学論文検索AI。エビデンスと引用論文提示に寄る。",
+    "url": "https://consensus.app/",
+    "tags": {
+      "media_types": ["text"],
+      "purposes": ["research"],
+      "pricing": "freemium",
+      "japanese_level": "ok",
+      "difficulty": "intermediate"
+    },
+    "platform": {
+      "web": true,
+      "ios_app": true,
+      "android_app": true,
+      "desktop_app": false,
+      "requires_discord": false
+    },
+    "features": {
+      "web_search": true,
+      "citations": true,
+      "slides_generation": false,
+      "pdf_qa": false,
+      "long_context": false,
+      "coding_assistant": false,
+      "meeting_transcription": false,
+      "automation_workflows": false,
+      "image_generation": false,
+      "video_generation": false,
+      "music_generation": false,
+      "voice_generation": false,
+      "upscaling": false,
+      "avatar_video": false
+    },
+    "optout": {
+      "optout_available": true,
+      "training_optout_available": true,
+      "retention_control_available": true,
+      "visibility_control_available": null,
+      "notes": "検索/利用データの扱いはポリシー参照。",
+      "link": "https://consensus.app/privacy/"
+    }
+  },
+  {
+    "id": "elicit",
+    "name": "Elicit",
+    "category": "research",
+    "description": "文献レビュー自動化。論文要点抽出/整理で時短。",
+    "url": "https://elicit.com/",
+    "tags": {
+      "media_types": ["text"],
+      "purposes": ["research"],
+      "pricing": "freemium",
+      "japanese_level": "ok",
+      "difficulty": "advanced"
+    },
+    "platform": {
+      "web": true,
+      "ios_app": false,
+      "android_app": false,
+      "desktop_app": false,
+      "requires_discord": false
+    },
+    "features": {
+      "web_search": true,
+      "citations": true,
+      "slides_generation": false,
+      "pdf_qa": true,
+      "long_context": false,
+      "coding_assistant": false,
+      "meeting_transcription": false,
+      "automation_workflows": false,
+      "image_generation": false,
+      "video_generation": false,
+      "music_generation": false,
+      "voice_generation": false,
+      "upscaling": false,
+      "avatar_video": false
+    },
+    "optout": {
+      "optout_available": true,
+      "training_optout_available": true,
+      "retention_control_available": true,
+      "visibility_control_available": null,
+      "notes": "ユーザーデータ保護方針はポリシー参照。",
+      "link": "https://elicit.com/privacy"
+    }
+  },
+  {
+    "id": "julius",
+    "name": "Julius AI",
+    "category": "research",
+    "description": "データ分析AI。Excel/CSVでの分析やグラフ作成をチャットで行える。",
+    "url": "https://julius.ai/",
+    "tags": {
+      "media_types": ["data"],
+      "purposes": ["research", "business"],
+      "pricing": "paid",
+      "japanese_level": "ok",
+      "difficulty": "intermediate"
+    },
+    "platform": {
+      "web": true,
+      "ios_app": false,
+      "android_app": false,
+      "desktop_app": false,
+      "requires_discord": false
+    },
+    "features": {
+      "web_search": false,
+      "citations": false,
+      "slides_generation": false,
+      "pdf_qa": false,
+      "long_context": false,
+      "coding_assistant": false,
+      "meeting_transcription": false,
+      "automation_workflows": false,
+      "image_generation": false,
+      "video_generation": false,
+      "music_generation": false,
+      "voice_generation": false,
+      "upscaling": false,
+      "avatar_video": false
+    },
+    "optout": {
+      "optout_available": true,
+      "training_optout_available": true,
+      "retention_control_available": true,
+      "visibility_control_available": null,
+      "notes": "アップロードデータの扱いはポリシー参照。",
+      "link": "https://julius.ai/privacy"
+    }
+  },
+  {
+    "id": "glean",
+    "name": "Glean",
+    "category": "business",
+    "description": "企業向けの横断検索/ナレッジAI。社内SaaSをまたいで探せる。",
+    "url": "https://www.glean.com/",
+    "tags": {
+      "media_types": ["text", "data"],
+      "purposes": ["business"],
+      "pricing": "enterprise",
+      "japanese_level": "ok",
+      "difficulty": "advanced"
+    },
+    "platform": {
+      "web": true,
+      "ios_app": true,
+      "android_app": true,
+      "desktop_app": false,
+      "requires_discord": false
+    },
+    "features": {
+      "web_search": true,
+      "citations": false,
+      "slides_generation": false,
+      "pdf_qa": true,
+      "long_context": true,
+      "coding_assistant": false,
+      "meeting_transcription": false,
+      "automation_workflows": true,
+      "image_generation": false,
+      "video_generation": false,
+      "music_generation": false,
+      "voice_generation": false,
+      "upscaling": false,
+      "avatar_video": false
+    },
+    "optout": {
+      "optout_available": true,
+      "training_optout_available": true,
+      "retention_control_available": true,
+      "visibility_control_available": null,
+      "notes": "顧客データの扱いはエンタープライズ契約/セキュリティ説明に依存。",
+      "link": "https://www.glean.com/security"
+    }
+  },
+  {
+    "id": "characterai",
+    "name": "Character.ai",
+    "category": "other",
+    "description": "人格/キャラを持つAIと会話するエンタメ系。",
+    "url": "https://character.ai/",
+    "tags": {
+      "media_types": ["text"],
+      "purposes": ["entertainment", "general"],
+      "pricing": "freemium",
+      "japanese_level": "ok",
+      "difficulty": "beginner"
+    },
+    "platform": {
+      "web": true,
+      "ios_app": true,
+      "android_app": true,
+      "desktop_app": false,
+      "requires_discord": false
+    },
+    "features": {
+      "web_search": false,
+      "citations": false,
+      "slides_generation": false,
+      "pdf_qa": false,
+      "long_context": false,
+      "coding_assistant": false,
+      "meeting_transcription": false,
+      "automation_workflows": false,
+      "image_generation": false,
+      "video_generation": false,
+      "music_generation": false,
+      "voice_generation": true,
+      "upscaling": false,
+      "avatar_video": false
+    },
+    "optout": {
+      "optout_available": false,
+      "training_optout_available": false,
+      "retention_control_available": null,
+      "visibility_control_available": null,
+      "notes": "会話データの利用方針はポリシー参照。",
+      "link": "https://character.ai/privacy"
+    }
+  },
+  {
+    "id": "zapier",
+    "name": "Zapier",
+    "category": "automation",
+    "description": "アプリ連携による業務自動化。AIでワークフロー作成を支援。",
+    "url": "https://zapier.com/",
+    "tags": {
+      "media_types": ["data"],
+      "purposes": ["automation", "business"],
+      "pricing": "freemium",
+      "japanese_level": "ok",
+      "difficulty": "intermediate"
+    },
+    "platform": {
+      "web": true,
+      "ios_app": false,
+      "android_app": false,
+      "desktop_app": false,
+      "requires_discord": false
+    },
+    "features": {
+      "web_search": false,
+      "citations": false,
+      "slides_generation": false,
+      "pdf_qa": false,
+      "long_context": false,
+      "coding_assistant": false,
+      "meeting_transcription": false,
+      "automation_workflows": true,
+      "image_generation": false,
+      "video_generation": false,
+      "music_generation": false,
+      "voice_generation": false,
+      "upscaling": false,
+      "avatar_video": false
+    },
+    "optout": {
+      "optout_available": true,
+      "training_optout_available": true,
+      "retention_control_available": true,
+      "visibility_control_available": null,
+      "notes": "データ取り扱いはプライバシーポリシー参照。",
+      "link": "https://zapier.com/privacy"
+    }
+  },
+  {
+    "id": "adobe_podcast",
+    "name": "Adobe Podcast",
+    "category": "audio",
+    "description": "音声ノイズ除去/音質補正などの音声ツール。",
+    "url": "https://podcast.adobe.com/",
+    "tags": {
+      "media_types": ["audio"],
+      "purposes": ["creative", "business"],
+      "pricing": "free",
+      "japanese_level": "ok",
+      "difficulty": "beginner"
+    },
+    "platform": {
+      "web": true,
+      "ios_app": false,
+      "android_app": false,
+      "desktop_app": false,
+      "requires_discord": false
+    },
+    "features": {
+      "web_search": false,
+      "citations": false,
+      "slides_generation": false,
+      "pdf_qa": false,
+      "long_context": false,
+      "coding_assistant": false,
+      "meeting_transcription": false,
+      "automation_workflows": false,
+      "image_generation": false,
+      "video_generation": false,
+      "music_generation": false,
+      "voice_generation": false,
+      "upscaling": true,
+      "avatar_video": false
+    },
+    "optout": {
+      "optout_available": true,
+      "training_optout_available": true,
+      "retention_control_available": true,
+      "visibility_control_available": null,
+      "notes": "Adobeのプライバシーポリシーに準拠。",
+      "link": "https://www.adobe.com/privacy.html"
+    }
+  },
+  {
+    "id": "fathom",
+    "name": "Fathom",
+    "category": "business",
+    "description": "会議の録画・文字起こし・要約のノートテイカー。",
+    "url": "https://fathom.video/",
+    "tags": {
+      "media_types": ["video"],
+      "purposes": ["business"],
+      "pricing": "free",
+      "japanese_level": "ok",
+      "difficulty": "beginner"
+    },
+    "platform": {
+      "web": true,
+      "ios_app": true,
+      "android_app": false,
+      "desktop_app": false,
+      "requires_discord": false
+    },
+    "features": {
+      "web_search": false,
+      "citations": false,
+      "slides_generation": false,
+      "pdf_qa": false,
+      "long_context": false,
+      "coding_assistant": false,
+      "meeting_transcription": true,
+      "automation_workflows": false,
+      "image_generation": false,
+      "video_generation": false,
+      "music_generation": false,
+      "voice_generation": false,
+      "upscaling": false,
+      "avatar_video": false
+    },
+    "optout": {
+      "optout_available": true,
+      "training_optout_available": true,
+      "retention_control_available": true,
+      "visibility_control_available": true,
+      "notes": "共有/公開範囲や保存はポリシー参照。",
+      "link": "https://fathom.video/privacy"
+    }
+  },
+  {
+    "id": "snipd",
+    "name": "Snipd",
+    "category": "other",
+    "description": "AI要約つきポッドキャストプレーヤー。重要箇所の抽出に向く。",
+    "url": "https://www.snipd.com/",
+    "tags": {
+      "media_types": ["audio"],
+      "purposes": ["general"],
+      "pricing": "free",
+      "japanese_level": "ok",
+      "difficulty": "beginner"
+    },
+    "platform": {
+      "web": false,
+      "ios_app": true,
+      "android_app": true,
+      "desktop_app": false,
+      "requires_discord": false
+    },
+    "features": {
+      "web_search": false,
+      "citations": false,
+      "slides_generation": false,
+      "pdf_qa": false,
+      "long_context": false,
+      "coding_assistant": false,
+      "meeting_transcription": false,
+      "automation_workflows": false,
+      "image_generation": false,
+      "video_generation": false,
+      "music_generation": false,
+      "voice_generation": false,
+      "upscaling": false,
+      "avatar_video": false
+    },
+    "optout": {
+      "optout_available": true,
+      "training_optout_available": true,
+      "retention_control_available": true,
+      "visibility_control_available": null,
+      "notes": "データ取り扱いはポリシー参照。",
+      "link": "https://www.snipd.com/privacy-policy"
+    }
+  },
+  {
+    "id": "meta_ai",
+    "name": "Meta AI",
+    "category": "chat",
+    "description": "Meta系のAIアシスタント（提供範囲は地域/アプリで変動）。",
+    "url": "https://www.meta.ai/",
+    "tags": {
+      "media_types": ["text", "image", "data"],
+      "purposes": ["general"],
+      "pricing": "free",
+      "japanese_level": "ok",
+      "difficulty": "beginner"
+    },
+    "platform": {
+      "web": true,
+      "ios_app": true,
+      "android_app": true,
+      "desktop_app": false,
+      "requires_discord": false
+    },
+    "features": {
+      "web_search": true,
+      "citations": false,
+      "slides_generation": false,
+      "pdf_qa": false,
+      "long_context": false,
+      "coding_assistant": false,
+      "meeting_transcription": false,
+      "automation_workflows": false,
+      "image_generation": true,
+      "video_generation": false,
+      "music_generation": false,
+      "voice_generation": true,
+      "upscaling": false,
+      "avatar_video": false
+    },
+    "optout": {
+      "optout_available": true,
+      "training_optout_available": true,
+      "retention_control_available": true,
+      "visibility_control_available": null,
+      "notes": "地域（EU等）では学習利用に関する異議申立て/オプトアウト導線が案内される場合がある。",
+      "link": "https://www.facebook.com/help/contact/510058597920541"
+    }
+  },
+  {
+    "id": "codeium",
+    "name": "Codeium",
+    "category": "dev",
+    "description": "コード補完/AIチャット。無料枠が強いことで知られる。",
+    "url": "https://codeium.com/",
+    "tags": {
+      "media_types": ["code"],
+      "purposes": ["dev"],
+      "pricing": "freemium",
+      "japanese_level": "ok",
+      "difficulty": "intermediate"
+    },
+    "platform": {
+      "web": true,
+      "ios_app": false,
+      "android_app": false,
+      "desktop_app": true,
+      "requires_discord": false
+    },
+    "features": {
+      "web_search": false,
+      "citations": false,
+      "slides_generation": false,
+      "pdf_qa": false,
+      "long_context": false,
+      "coding_assistant": true,
+      "meeting_transcription": false,
+      "automation_workflows": false,
+      "image_generation": false,
+      "video_generation": false,
+      "music_generation": false,
+      "voice_generation": false,
+      "upscaling": false,
+      "avatar_video": false
+    },
+    "optout": {
+      "optout_available": true,
+      "training_optout_available": true,
+      "retention_control_available": true,
+      "visibility_control_available": null,
+      "notes": "収集/共有の扱いは公式ポリシー参照（提供条件は変動）。",
+      "link": "https://codeium.com/privacy"
+    }
+  },
+  {
+    "id": "jetbrains_ai_assistant",
+    "name": "JetBrains AI Assistant",
+    "category": "dev",
+    "description": "JetBrains IDEに統合されるAI支援。コード生成/説明/リファクタ提案など。",
+    "url": "https://www.jetbrains.com/ai/",
+    "tags": {
+      "media_types": ["code"],
+      "purposes": ["dev"],
+      "pricing": "paid",
+      "japanese_level": "ok",
+      "difficulty": "intermediate"
+    },
+    "platform": {
+      "web": true,
+      "ios_app": false,
+      "android_app": false,
+      "desktop_app": true,
+      "requires_discord": false
+    },
+    "features": {
+      "web_search": false,
+      "citations": false,
+      "slides_generation": false,
+      "pdf_qa": false,
+      "long_context": true,
+      "coding_assistant": true,
+      "meeting_transcription": false,
+      "automation_workflows": false,
+      "image_generation": false,
+      "video_generation": false,
+      "music_generation": false,
+      "voice_generation": false,
+      "upscaling": false,
+      "avatar_video": false
+    },
+    "optout": {
+      "optout_available": true,
+      "training_optout_available": true,
+      "retention_control_available": true,
+      "visibility_control_available": null,
+      "notes": "除外設定（例: .aiignore）などの仕組みが提供される。",
+      "link": "https://www.jetbrains.com/help/ai-assistant/disable-ai-assistant.html"
+    }
+  },
+  {
+    "id": "synthesia",
+    "name": "Synthesia",
+    "category": "video",
+    "description": "アバターが話す研修/説明動画を作成できる代表的サービス。",
+    "url": "https://www.synthesia.io/",
+    "tags": {
+      "media_types": ["video"],
+      "purposes": ["business"],
+      "pricing": "paid",
+      "japanese_level": "ok",
+      "difficulty": "beginner"
+    },
+    "platform": {
+      "web": true,
+      "ios_app": false,
+      "android_app": false,
+      "desktop_app": false,
+      "requires_discord": false
+    },
+    "features": {
+      "web_search": false,
+      "citations": false,
+      "slides_generation": false,
+      "pdf_qa": false,
+      "long_context": false,
+      "coding_assistant": false,
+      "meeting_transcription": false,
+      "automation_workflows": false,
+      "image_generation": false,
+      "video_generation": true,
+      "music_generation": false,
+      "voice_generation": true,
+      "upscaling": false,
+      "avatar_video": true
+    },
+    "optout": {
+      "optout_available": true,
+      "training_optout_available": true,
+      "retention_control_available": true,
+      "visibility_control_available": true,
+      "notes": "安全/倫理方針に基づく（実際の扱いは契約/手続きに依存）。",
+      "link": "https://www.synthesia.io/ethics"
+    }
+  },
+  {
+    "id": "genspark",
+    "name": "Genspark",
+    "category": "productivity",
+    "description": "オールインワンAIワークスペース。調査・作成・整理の“自動化（オートパイロット）”を売りにし、スライド/シート/ドキュメント等を統合。",
+    "url": "https://www.genspark.ai/",
+    "tags": {
+      "media_types": ["text", "image", "data"],
+      "purposes": ["business", "research"],
+      "pricing": "freemium",
+      "japanese_level": "native",
+      "difficulty": "beginner"
+    },
+    "platform": {
+      "web": true,
+      "ios_app": true,
+      "android_app": true,
+      "desktop_app": false,
+      "requires_discord": false
+    },
+    "features": {
+      "web_search": true,
+      "citations": true,
+      "slides_generation": true,
+      "pdf_qa": true,
+      "long_context": true,
+      "coding_assistant": false,
+      "meeting_transcription": false,
+      "automation_workflows": true,
+      "image_generation": true,
+      "video_generation": false,
+      "music_generation": false,
+      "voice_generation": true,
+      "upscaling": false,
+      "avatar_video": false
+    },
+    "optout": {
+      "optout_available": true,
+      "training_optout_available": true,
+      "retention_control_available": true,
+      "visibility_control_available": true,
+      "notes": "アプリストア記載の規約/プライバシーに基づき、提供元ポリシーを参照（設定項目は変更され得る）。",
+      "link": "https://mainfunc.ai/privacy"
+    }
+  }
+]
