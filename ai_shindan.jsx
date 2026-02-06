@@ -1,32 +1,47 @@
-import React, { useState, useEffect } from 'react';
-import { 
-  Sparkles, 
-  Video, 
-  Code, 
-  Briefcase, 
-  GraduationCap, 
-  Globe, 
-  ShieldCheck, 
-  ChevronRight, 
-  RefreshCw,
-  ExternalLink,
-  CheckCircle2,
-  AlertTriangle,
-  Bot,
-  List,
-  Bug,
-  Search,
-  Presentation,
-  FileText,
-  Smartphone,
-  Mic,
-  Coins,
-  MessageCircle,
-  Image as ImageIcon,
-  Music,
-  LayoutGrid,
-  MonitorPlay
-} from 'lucide-react';
+const React = window.React;
+const { useState, useEffect } = React;
+
+const IconBase = ({ className = "" }) => (
+  <svg
+    viewBox="0 0 24 24"
+    className={className}
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  >
+    <circle cx="12" cy="12" r="9" />
+    <path d="M12 7v5l3 3" />
+  </svg>
+);
+
+const Sparkles = (props) => <IconBase {...props} />;
+const Video = (props) => <IconBase {...props} />;
+const Code = (props) => <IconBase {...props} />;
+const Briefcase = (props) => <IconBase {...props} />;
+const GraduationCap = (props) => <IconBase {...props} />;
+const Globe = (props) => <IconBase {...props} />;
+const ShieldCheck = (props) => <IconBase {...props} />;
+const ChevronRight = (props) => <IconBase {...props} />;
+const RefreshCw = (props) => <IconBase {...props} />;
+const ExternalLink = (props) => <IconBase {...props} />;
+const CheckCircle2 = (props) => <IconBase {...props} />;
+const AlertTriangle = (props) => <IconBase {...props} />;
+const Bot = (props) => <IconBase {...props} />;
+const List = (props) => <IconBase {...props} />;
+const Bug = (props) => <IconBase {...props} />;
+const Search = (props) => <IconBase {...props} />;
+const Presentation = (props) => <IconBase {...props} />;
+const FileText = (props) => <IconBase {...props} />;
+const Smartphone = (props) => <IconBase {...props} />;
+const Mic = (props) => <IconBase {...props} />;
+const Coins = (props) => <IconBase {...props} />;
+const MessageCircle = (props) => <IconBase {...props} />;
+const ImageIcon = (props) => <IconBase {...props} />;
+const Music = (props) => <IconBase {...props} />;
+const LayoutGrid = (props) => <IconBase {...props} />;
+const MonitorPlay = (props) => <IconBase {...props} />;
 
 // --- データはJSONから取得 ---
 
@@ -274,7 +289,7 @@ const GenieCharacter = ({ expression = "neutral", className = "" }) => {
 };
 
 
-export default function App() {
+function App() {
   const [step, setStep] = useState('start');
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [scores, setScores] = useState({});
@@ -764,3 +779,5 @@ export default function App() {
     </div>
   );
 }
+
+window.App = App;
